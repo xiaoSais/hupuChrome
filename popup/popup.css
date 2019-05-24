@@ -1,0 +1,82 @@
+h1 {
+    font-size: 30px;
+}
+body {
+    width: 160px
+}
+.header {
+    border-bottom: 2px solid rgb(145, 15, 48);
+    text-align: center;
+}
+.switch, .switch1 {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+.des {
+    padding: 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.line, .line1 {
+    height: 2px;
+    margin-top: 10px;
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+}
+.block, .block1 {
+    margin-top: 10px;
+    width: 35px;
+    height: 15px;
+    border-radius: 7.5px;
+    background-color: rgb(153, 153, 153);
+    display: flex;
+    align-items: center;
+}
+.block_active {
+    background-color: rgb(253, 154, 123);
+}
+.circle, .circle1 {
+    width: 20px;
+    height: 20px; 
+    background-color: white;
+    box-shadow:1px 1px 3px #000;
+    border-radius: 10px;
+    position: relative;
+    left: 0;
+    transition: left linear .2s;
+}
+.circle_active {
+    background-color: rgb(252, 55, 9);
+    left: 15px;
+    box-shadow: none;
+    transition: left linear .1s;
+}
+.text, .text1 {
+    padding: 10px 0 0 10px;
+    color: #000;
+    font-weight: bold;
+}
+.switch1 {
+    display: none;
+}
+.switch1_show {
+    display: flex;
+}
+.line1 {
+    margin-top: 0;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center
+}
+a {
+    color: #000;
+    text-decoration: none;
+}

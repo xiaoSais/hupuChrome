@@ -1,0 +1,42 @@
+{
+  "name": "hupuChrome Extensions",
+  "description" : "虎扑步行街社区PC端拓展工具，快捷、方便的触及板块内主题贴内容。",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "images/hupu.png",
+    "16": "images/hupu.png",
+    "32": "images/hupu.png",
+    "48": "images/hupu.png",
+    "128": "images/hupu.png",
+    "default_popup": "popup/popup.html"
+  },
+  "icons": {
+    "32": "images/hupu.png",
+    "48": "images/hupu.png",
+    "128": "images/hupu.png"
+  },
+  "manifest_version": 2,
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens hello.html"
+    }
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "file:///*",
+    "tabs",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://bbs.hupu.com/*"],
+      "js": ["build/index.js"],
+      "css": ["src/css/custom.css"]
+    }
+  ]
+}
