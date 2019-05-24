@@ -10,4 +10,4 @@ chrome://extensions/
 2. 打开右上角开发者模式，将chrome文件夹下的 .crx 文件拖到该页面里。
 
 #### 演示
-![image]
+![image](images/readme.gif)
